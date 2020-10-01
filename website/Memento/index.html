@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon Mémento</title>
+  </head>
+  <body>
+    <!--explications des bases de commande man ls, ls, pwd , cd-->
+    <h1>La ligne de commande</h1>
+    <p>IL en va sans dire que pour naviguer dans votre ordinateur, un Terminal est nécessaire. Vous le trouverez nativement sous la distribution de Linux Ubuntu et les autres, ou sur Mac.</br>
+    Il vous faudra sous windows installer une distribution Linux pour utiliser le Terminal qui se nommera "Bash".</br>
+    Pour savoir comment installer bash sur windows, cliquez <a href=https://www.pcastuces.com/pratique/astuces/5178.htm>ICI</a></p>
+    <h2><strong>Les Bases</strong></h2>
+    <p>Pour ouvrir le manuel de la liste de commande on utilise la commande : <strong>man ls</strong></br>
+      Ensuite, si on souhaite connaître la liste des dossiers et des fichiers contenu dans le dossier où on se trouve, on utilise la commande : <strong>ls</strong>
+    </p>
+    <p>Si l'on souhaite le contenu du dossier courant avec les fichiers cachés, la commande est la suivante :<strong>ls -a</strong> </p></br>
+    On peut également afficher, toujours dans le dossier courant, le contenu en version longue sans les fichiers cachés. La commande est la suivante: <strong>ls -l</strong></br>
+    Enfin, toujours dans le dossier courant, on peut combiner les deux commandes précédentes pour afficher le contenu en version longue AVEC les fichiers cachés. 
+    Attention, combo : <strong>ls -al</strong></br>
+    <p>Pour afficher le chemin du dossier courant, qui répond à cette question: "Mais bon sang, où je suis dans ce système?!", la commande très utile est <strong>pwd</strong></p></br>
+    <p>Pour se déplacer, très utiles me direz vous, rien de plus simple que cette commande ci: <strong>cd "nom-du-fichier"</strong></br>
+    Et por revenir en arrière? Toujours aussi simple. Voyez vous même: <strong>cd ..</strong></br>
+    L'ajout des deux poits ".." permet de revenir vers le dossier dit "parent".</p>
+
+      <!-- Commandes super utilisateurs, les différentes mise à jours, recherche de mots, instalation d'application-->
+    
+      <h2><strong>Super Utilisateur et autres joyeusetés</strong></h2>
+    <p>Se mettre en super utilisateur "<strong>su</strong>, il y a deux possibilités qui sous leurs apparente ressemblance sont bien différentes</p></br>
+  La commande <strong>sudo -s</strong> permet de passer en Super Utilisateur (su) MAIS de rester dans le dossier où on se trouve.</br>
+  Son copain, la commande <strong>sudo -i</strong> renvoit lui vers le dossier Root de la machine. </br>
+  Cette différence est très IMPORTANTE et n'oubliez jamais que lorsque vous êtes en Super Utilisateur, tout ce que vous faites est très, très important, vous pouvez détruires des informations sur votre système aussi facilement qu'un click.</br>
+  A manipuler avec grande précaution. On vous aura prévenu !! </p>
+      <h3>Les mises à jours</h3>
+      <p>Pour mettre à jours la liste des paquets la commande est la suivante: <strong>apt update</strong></p></br>
+      Si vous savez pas ce que c'est qu'un paquet, <a href=https://fr.wikipedia.org/wiki/Paquet_(logiciel)>l'ami wiki est là pour vous</a>
+      <p>Pour mettre à jour les paquets, utilisez la commande suivante: <strong>apt upgrade</strong></p>
+      <p>Si vous désirez rechercher un mot dans vos fichiers, dossier, la commande suivante peut s'avérer très utile: <strong>apt search "mot à chercher"</strong></p>
+      <h3>Installer des paquets/Applications téléchargés</h3>
+      <p>La commande <strong>apt install "nom du paquet"</strong> vous permet de d'installer, via votre terminal, les paquets dont vous avez besoin.</p></br>
+      Souvent il vous est demandé votre mot de passe pour confirmer l'installation. Un peu de sécurité ne mange pas de pain!</p>
+      <p>Pour l'installation de logiciel, la commande <strong>dpkg -i nom-du-fichier</strong> vous permet d'installer les logiciels ou applciations que vous aurez téléchargés.</p>
+    
+      <!-- Manipulation du terminal, créations de fichier, de dossiers, de sous dossiers, déplacer, ouvrir un éditeur de texte-->
+      <h2>Manipulation du terminal</h2>
+      <h3>Création de dossiers et de fichiers</h3>
+      <p>LA commande pour créer un Dossier est le suivant: <strong>mkdir</strong></p>
+      <p>Pour créer des sous dossiers dans un dossier, la commande <strong>mkdir -p</strong> va permettre à l'ordinateur de créer un dossier et son sous dossier directement</br>
+      exemple: mkdir -p Memento/assets. Le dossier "Memento" est créer et son sous dossier "assets" également</p>
+    <pre><code></code></pre>
+  </body>
+</html>
